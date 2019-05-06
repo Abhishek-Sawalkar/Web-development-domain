@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="competitivecoding.css">
+	<title>coding</title>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	</head>
+	<!--for slide menu-->
+	<script>
+		function openSlideMenu(){
+			document.getElementById('menu').style.width = '250px';
+			document.getElementById('content').style.marginLeft = '250px';
+		}
+		function closeSlideMenu(){
+			document.getElementById('menu').style.width = '0';
+			document.getElementById('content').style.marginLeft = '0';
+		}
+
+	</script>
+<body>
+	
+<div style="position: absolute;">
+	<!--slide menu-->
+	<div class="overlap">
+		<div id ="content">
+			<span class="slide">
+				<a href="#" onclick="openSlideMenu()">
+					<i class="fas fa-bars" id="icon"></i>
+				</a>
+			</span>
+
+			<div id ="menu" class="navmenu">
+				<a href="#" class="close" onclick="closeSlideMenu()" >
+					<i class="fas fa-times"></i>
+				</a>
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Services</a>
+				<a href="#">Portfolio</a>
+				<a href="#">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<!--TOP MENU -->
+	<div class="topmenu"> 
+		<ul id="horizontal">
+			<li><a class="active" href="mypage.html">Home</a></li>
+			<li><a href="web_development.html">Web Development</a></li>
+			<li><a href="android.html">Android Development</a></li>
+			<li><a href="#">Competitive Coding</a></li>
+		</ul>
+	</div>
+
+	<!--carousel-->
+	<div class="carousel">
+		<button class="carousel__button carousel__button--left">
+			<i class="fas fa-angle-left" id="ico"></i>
+		</button>
+			<div class="carousel__track-container">
+				
+					<ul class="carousel__track">
+						<li class="carousel__slide current-slide">					
+							<img class="carousel__image" src="coding6.png">
+						</li>
+						<li class="carousel__slide">
+							<img class="carousel__image" src="coding4.png">
+						</li>
+						<li class="carousel__slide">
+							<img class="carousel__image" src="coding6.png">
+						</li>
+					</ul>
+			</div>
+		<button class="carousel__button carousel__button--right">
+			<i class="fas fa-angle-right" id="ico"></i>
+		</button>	
+	</div>
+	<!--data part-->
+	<div class="data">
+		<h1>What is Competitive Programming</h1>
+		<p>Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications. Contestants are referred to as sport programmers. Competitive programming is recognized and supported by several multinational software and Internet companies, such as Google and Facebook. There are several organizations who host programming competitions on a regular basis.
+
+		A programming competition generally involves the host presenting a set of logical or mathematical problems to the contestants (who can vary in number from tens to several thousands), and contestants are required to write computer programs capable of solving each problem. Judging is based mostly upon number of problems solved and time spent for writing successful solutions, but may also include other factors (quality of output produced, execution time, program size, etc.)</p>
+
+		<h1>Overview</h1>
+		<p>The aim of competitive programming is to write source code of computer programs which are able to solve given problems. A vast majority of problems appearing in programming contests are mathematical or logical in nature. Typical such tasks belong to one of the following categories: combinatorics, number theory, graph theory, geometry, string analysis and data structures. Problems related to artificial intelligence are also popular in certain competitions.
+
+		Irrespective of the problem category, the process of solving a problem can be divided into two broad steps: constructing an efficient algorithm, and implementing the algorithm in a suitable programming language (the set of programming languages allowed varies from contest to contest). These are the two most commonly tested skills in programming competitions.
+
+		In most contests, the judging is done automatically by host machines, commonly known as judges. Every solution submitted by a contestant is run on the judge against a set of (usually secret) test cases. Normally, contest problems have an all-or-none marking system, meaning that a solution is "Accepted" only if it produces satisfactory results on all test cases run by the judge, and rejected otherwise. However, some contest problems may allow for partial scoring, depending on the number of test cases passed, the quality of the results, or some other specified criteria. Some other contests only require that the contestant submit the output corresponding to given input data, in which case the judge only has to analyze the submitted output data.
+
+		Online judges are online environments in which testing takes place. Online judges have ranklists showing users with the biggest number of accepted solutions and/or shortest execution time for a particular problem.</p>
+		<h1>Contest</h1>
+		<p>There are two types of competition formats: short-term and long-term. Each round of short-term competition lasts from 1 to 3 hours. Long-term competitions can last from a few days to a few months.
+
+		<h2>Short-term</h2>
+		<ul>
+			<li>ACM-ICPC - one of the oldest competitions, for students of universities in groups of 3 persons each</li>
+			<li>ACSL - computer science competition with written and programming portions, for middle/high school students</li>
+			<li>Google Code Jam - competition held from 2003, provided and sponsored by Google</li>
+			<li>Facebook Hacker Cup - competition held from 2011, provided and sponsored by Facebook</li>
+			<li>HackerRank Ad Infinitum - Math Programming Contest by HackerRank</li>
+			<li>CodeChef Cook-Off - an ACM-ICPC style programming contest held on second last Sunday of every month</li>
+			<li>CodeChef LunchTime - a Junior Programming series held on last Sunday of every month, for middle/high school students</li>
+			<li>CodeChef SnackDown - An annual multi round global programming contest held by CodeChef</li>
+			<li>Codeforces Round - typically two hour contest held every week since 2010 by Codeforces.</li>
+			<li>IEEEXtreme Programming Competition - annual competition for IEEE Student Members held since 2006 by IEEE</li>
+			<li>IOI - one of the oldest competitions, for secondary school students</li>
+			<li>Topcoder Open (TCO) - Algorithm - competition held since 2004 by Topcoder</li>
+			<li>Yandex Algorithm - competition held since 2013 by Yandex;</li>
+			<li>National Olympiad in Informatics, China - competition held in China since 1984</li>
+		</ul>	
+			<p>In most of the above competitions, since the number of contestants is quite large, competitions are usually organized in several rounds. They usually require online participation in all rounds except the last, which require onsite participation. A special exception to this is IEEEXtreme, which is a yearly 24-hour virtual programming competition. The top performers at IOI and ACM-ICPC receive gold, silver and bronze medals while in the other contests, cash prizes are awarded to the top finishers. Also hitting the top places in the score tables of such competitions may attract interest of recruiters from software and Internet companies.
+			</p>	
+			<h2>Long-term</h2>	
+			<h4>CodeChef Long Challenges</h4>
+			<ul>
+				<li>HackerRank Week of Code – 7-day contest by HackerRank</li>
+				<li>ICFP Programming Contest – annual 3-day competition held since 1998 by the International Conference on Functional Programming</li>
+			</ul>
+			<h4>Topcoder Marathon Matches</h4>
+			<ul>
+				<li>Artificial intelligence and machine learning</li>
+				<li>Kaggle – machine learning competitions.</li>
+			    <li>CodeCup – AI board game competition held annually since 2003. Game rules get published in September and the final tournament is held in January.</li>
+				<li>Google AI Challenge – bi-annual competitions for students that ran 2009 to 2011</li>
+			 	<li>Halite – An AI programming challenge. Halite I was held from November 2016 to February 2017 and Halite II is being held from October 23, 2017 to January 22, 2018. Both are sponsored by Two Sigma and Cornell Tech Google has also provided support for Halite II
+				Russian AI Cup open artificial intelligence programming contest</li>
+			</ul>
+	</div>
+	<!--card part-->
+	<section id="team">
+		<h1 style="text-align: center;">Some Great Sites for Competitive Coding</h1><br>
+		<div class="container my-3 py-5 text-center">
+			
+			<div class="row first">
+				<div class="col-lg-3 col-md-6">
+					<div class="card">
+						<div class="card-body">
+							<img src="coding1.png" class="img-fluid">
+							<h3>Stack OverFlow</h3>
+							<h5>It's a Q&A site</h5>
+							<p style="text-align: center;">Stack Overflow is a question and answer site for enthusiast programmers.</p>
+							<div class="d-flex flex-row justify-content-center">
+								<div class="p-4">
+									<a href="#">
+										<i class="fa fa-search" style="font-size: 48px; color: red"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row second">
+				<div class="col-lg-3 col-md-6">
+					<div class="card">
+						<div class="card-body">
+							<img src="coding2.jpeg" class="img-fluid">
+							<h3>GEEKSFORGEEKS</h3><br>
+							<h5>A computer science portal for CS students.</h5>
+							<p></p>
+							<div class="d-flex flex-row justify-content-center">
+								<div class="p-4">
+									<a href="#">
+										<i class="fa fa-search" style="font-size: 48px; color: red"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row third">
+				<div class="col-lg-3 col-md-6">
+					<div class="card">
+						<div class="card-body">
+							<img src="coding3.jpeg" class="img-fluid">
+							<h3>Medium</h3>
+							<h5>Online publishing platform</h5>
+							<p style="text-align: center;">Platform where you can write your topic which you like most.</p>
+							<div class="d-flex flex-row justify-content-center">
+								<div class="p-4">
+									<a href="#">
+										<i class="fa fa-search" style="font-size: 48px; color: red"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<script src="style.js"></script>
+</body>
+</html>
+

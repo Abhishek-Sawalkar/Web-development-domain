@@ -1,0 +1,231 @@
+body{
+	margin: 0;
+	font-family: Times;
+	font-size: 18px;
+
+}
+.carousel{
+	position:absolute;
+	height: 600px;
+	width: 100%;
+}
+.carousel__image{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.carousel__track-container{
+	background-color: lightgreen;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+.carousel__track{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	transition: transform 500ms ease-in;
+}
+.carousel__slide{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+.carousel__button{
+	background: transparent;
+	
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 0;
+	cursor: pointer;
+}
+.carousel__button--left{
+	left:40px;
+	z-index: 1;
+}
+.carousel__button--right{
+	position: absolute;
+	right: 30px;
+}
+#ico{
+	height: 70px;
+	width: 50px;
+	color: cyan;
+}
+.is-hidden{display: none;}
+.data{
+	position: relative;
+	top: 601px;
+	left: 0;
+}
+.close i{
+	z-index: 1;
+}
+
+/*---card---*/
+
+#team i{
+	font-weight: 500;
+	color: #555;
+}
+#team p{
+	font-weight: 500;
+}
+.img-fluid{
+	padding-left: 45px;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;	
+}
+#team .card{
+	height: 100%;
+	border-radius: 0;
+	box-shadow: 5px 5px 15px #e74c3c;
+	transition: all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+	display: inline-block;
+}
+
+#team .card:hover{
+	background: #e74c3c;
+	color: #fff;
+	border-radius: 5px;
+	border:none;
+	box-shadow: 5px 5px 10px #9E9E9E;
+}
+#team .card:hover h3,#team .card .card-body.p-4:hover a,#team .card:hover h5,#team .card:hover p{
+	color: #fff;
+}
+#team{
+	height: 100%;
+	padding: 10px;
+	padding-top: 30px;
+	position: absolute;
+	width: 100%;
+	top: 1100px;
+}
+
+.p-4{
+	display: inline-block;
+	padding: 30px;
+	font-size: 30px;
+	color: #fff;
+}
+.card-body img{
+	position: relative;
+	left: 60px;
+}
+.card-body p,h3,h5{
+	text-align: center;
+}
+.first, .second, .third{
+	position: absolute;
+	width: 300px;
+	height: 500px;
+}
+.first{
+	padding-left: 70px;
+}
+.second{
+	left: 520px;
+}
+.third{
+	left: 960px;
+}
+/* THE SLIDE MENU*/
+#icon{
+	font-size: 35px;
+	color:cyan;
+	position: absolute;
+}
+#icon:hover{
+	color: lightgreen;
+}
+.overlap{
+	z-index: 2;
+	position: absolute;
+	top: 15px;
+	left:15px;
+}
+.navmenu{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0; 
+	left: 0;
+	background-color: #111;
+	opacity:0.9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.7s;
+}
+.navmenu a{
+	display: block;
+	padding: 20px 30px;
+	font-size: 25px;
+	text-decoration: none;
+	color: #ccc;
+}
+.navmenu .close:hover{
+	color: red;
+}
+.navmenu a:hover{
+	color: #fff;
+	transition: 0.4s;
+}
+.navmenu .close{
+	position: absolute;
+	top: 0;
+	right: 22px;
+	font-size: 30px
+}
+
+/* THE TOP MENU */
+
+#horizontal{
+	opacity: 0.9;
+	position: absolute;
+	z-index: 1;
+	top: 0; 
+	left: 304px;
+	list-style: none;
+	text-align: center;
+	padding: 20px 0px;
+}
+#horizontal li{
+	display: inline-block;
+	padding:0 20px;
+}
+#horizontal li a{
+	font-size: 25px;
+	text-decoration: none;
+	color: white;
+}
+#horizontal li a:hover{
+	color: cyan;
+}
+
+/*-- DATA --*/
+.data{
+	padding: 30px 75px;
+	position: relative;
+	top: 601px;
+	left: 0;
+}
+.data h1{
+	font-family: Times;
+}
+.data p{
+	font-size: 18px;
+}
+.data li{
+	font-size: 18px;
+}

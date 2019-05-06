@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="web_development.css">
+	<title>web</title>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<!--for slide menu-->
+	<script>
+		function openSlideMenu(){
+			document.getElementById('menu').style.width = '250px';
+			document.getElementById('content').style.marginLeft = '250px';
+		}
+		function closeSlideMenu(){
+			document.getElementById('menu').style.width = '0';
+			document.getElementById('content').style.marginLeft = '0';
+		}
+
+	</script>
+<body>
+	
+<div style="position: absolute;">
+	<!--slide menu-->
+	<div class="overlap">
+		<div id ="content">
+			<span class="slide">
+				<a href="#" onclick="openSlideMenu()">
+					<i class="fas fa-bars" id="icon"></i>
+				</a>
+			</span>
+
+			<div id ="menu" class="navmenu">
+				<a href="#" class="close" onclick="closeSlideMenu()" >
+					<i class="fas fa-times"></i>
+				</a>
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Services</a>
+				<a href="#">Portfolio</a>
+				<a href="#">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<!--TOP MENU -->
+	<div class="topmenu"> 
+		<ul id="horizontal">
+			<li><a class="active" href="mypage.html">Home</a></li>
+			<li><a href="#">Web Development</a></li>
+			<li><a href="android.html">Android Development</a></li>
+			<li><a href="competitive_coding.html">Competitive Coding</a></li>
+		</ul>
+	</div>
+
+	<!--carousel-->
+	<div class="carousel">
+		<button class="carousel__button carousel__button--left">
+			<i class="fas fa-angle-left" id="ico"></i>
+		</button>
+			<div class="carousel__track-container">
+				
+					<ul class="carousel__track">
+						<li class="carousel__slide current-slide">					
+							<img class="carousel__image" src="web_carousel1.jpg">
+						</li>
+						<li class="carousel__slide">
+							<img class="carousel__image" src="web_carousel2.jpg">
+						</li>
+						<li class="carousel__slide">
+							<img class="carousel__image" src="web_carousel3.jpg">
+						</li>
+					</ul>
+			</div>
+		<button class="carousel__button carousel__button--right">
+			<i class="fas fa-angle-right" id="ico"></i>
+		</button>	
+	</div>
+	<!--data part-->
+	<div class="data">
+		<h1>What is Competitive Programming</h1>
+		<p>Web development is the work involved in developing a web site for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web-based internet applications (web apps), electronic businesses, and social network services. A more comprehensive list of tasks to which web development commonly refers, may include web engineering, web design, web content development, client liaison, client-side/server-side scripting, web server and network security configuration, and e-commerce development.
+
+		Among web professionals, "web development" usually refers to the main non-design aspects of building web sites: writing markup and coding.[2] Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.
+
+		For larger organizations and businesses, web development teams can consist of hundreds of people (web developers) and follow standard methods like Agile methodologies while developing websites. Smaller organizations may only require a single permanent or contracting developer, or secondary assignment to related job positions such as a graphic designer or information systems technician. Web development may be a collaborative effort between departments rather than the domain of a designated department. There are three kinds of web developer specialization: front-end developer, back-end developer, and full-stack developer. Front-end developers responsible for behavior and visuals that run in the user browser, while back-end developers deal with the servers.</p>
+
+		<h1>Overview</h1>
+		<p>Web development is the coding or programming that enables website functionality, per the owner's requirements. It mainly deals with the non-design aspect of building websites, which includes coding and writing markup.
+
+		Web development ranges from creating plain text pages to complex web-based applications, social network applications and electronic business applications.
+
+		The web development hierarchy is as follows:
+
+		Client-side coding
+		Server-side coding
+		Database technology</p>
+	</div>
+	<!--card part-->
+	<section id="team">
+		<h1 style="text-align: center;">Links of different YouTube channels for Reference.</h1><br>
+		<div class="container my-3 py-5 text-center">
+			
+			<div class="row first">
+				<div class="col-lg-3 col-md-6">
+					<div class="card">
+						<div class="card-body">
+							<img src="web3.jpg" class="img-fluid">
+							<h3>Kevin Powell</h3>
+							<h5>Web Developer</h5>
+							<p style="text-align: center;">YouTube Channel dedicated for HTML, CSS, JavaScript.</p>
+							<div class="d-flex flex-row justify-content-center">
+								<div class="p-4">
+									<a href="#">
+										<i class="fab fa-youtube" style="font-size: 48px; color: red" ></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row second">
+				<div class="col-lg-3 col-md-6">
+					<div class="card">
+						<div class="card-body">
+							<img src="web1.png" class="img-fluid rounded-circle w-50 mb-3">
+							<h3>LearnCode.academy</h3>
+							<h5>Web Developer</h5>
+							<p style="text-align: center;">YouTube Channel dedicated for HTML, CSS, JavaScript.</p>
+							<div class="d-flex flex-row justify-content-center">
+								<div class="p-4">
+									<a href="#">
+										<i class="fab fa-youtube" style="font-size: 48px; color: red"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row third">
+				<div class="col-lg-3 col-md-6">
+					<div class="card">
+						<div class="card-body">
+							<img src="web2.jpeg" class="img-fluid rounded-circle w-50 mb-3">
+							<h3>Traversy Media</h3>
+							<h5>Web Developer</h5>
+							<p style="text-align: center;">YouTube Channel dedicated for HTML, CSS, JavaScript.</p>
+							<div class="d-flex flex-row justify-content-center">
+								<div class="p-4">
+									<a href="#">
+										<i class="fab fa-youtube" style="font-size: 48px; color: red"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<script src="style.js"></script>
+</body>
+</html>
+

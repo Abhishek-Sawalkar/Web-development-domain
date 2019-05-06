@@ -1,0 +1,157 @@
+
+/* THE MAIN PAGE*/
+html,body{
+	font-family: Times;
+	color: black;
+	margin: 0;
+	line-height: 1.8em;
+}
+.section{
+	position: relative;
+	padding: 25px 50px;
+}
+.light{
+	background-color: #f4f4f4;
+	color: #666;
+}
+.dark{
+	background-color: #282e34;
+	color: #ddd;
+}
+.section p,h2{
+	text-align: center;
+	word-spacing: 5px;
+	font-size: 18px;
+}
+.img1, .img3, .img2,.img4{
+	z-index: 0;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.img1{
+	background-image: url(img19.jpg);
+	min-height: 100%;
+}
+.img2{
+	background-image: url(img20.jpg);
+	height: 400px;
+}
+.img3{
+	background-image: url(img22.jpg);
+	height: 400px;
+}
+.img4{
+	background-image: url(img23.jpg);
+	height: 400px;
+}
+.text1{
+	padding: 6px 30px;
+	opacity: 0.9;
+	position: absolute;
+	text-align: center;
+	letter-spacing: 10px;
+	color: #ccc;
+	font-size: 14px;
+	padding: 2px 5px;
+	background-color: #111;
+	top: 50%;
+	right: 50%;
+	transform: translateX(50%);
+}
+/*.img1 .text1{
+	top: 45%; 
+	left: 500px;
+}
+.img2 .text1{
+	top: 45%;
+	left: 590px;
+}
+.img3 .text1{
+	top: 45%;
+	left: 550px;
+}
+.img4 .text1{
+	top: 45%;
+	left: 560px;
+}*/
+
+/* THE SLIDE MENU*/
+
+#icon{
+	font-size: 35px;
+	color:cyan;
+	position: absolute;
+}
+#icon:hover{
+	color: lightgreen;
+}
+.overlap{
+	z-index: 1;
+	position: absolute;
+	top: 15px;
+	left:15px;
+}
+.navmenu{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0; 
+	left: 0;
+	background-color: #111;
+	opacity:0.9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.7s;
+}
+.navmenu a{
+	display: block;
+	padding: 20px 30px;
+	font-size: 25;
+	text-decoration: none;
+	color: #ccc;
+}
+.navmenu .close:hover{
+	color: red;
+}
+.navmenu a:hover{
+	color: #fff;
+	transition: 0.4s;
+}
+.navmenu .close{
+	position: absolute;
+	top: 0;
+	right: 22px;
+	font-size: 30px
+}
+
+/* THE TOP MENU */
+
+#horizontal{
+	opacity: 0.9;
+	position: absolute;
+	z-index: 1;
+	top: 0; 
+	left: 304px;
+	
+	/*background-color: #342415;*/
+	list-style: none;
+	text-align: center;
+	padding: 20px 0px;
+}
+#horizontal li{
+	display: inline-block;
+	padding:0 20px;
+}
+#horizontal li a{
+	font-size: 25px;
+	text-decoration: none;
+	color: #ffffff;
+}
+#horizontal li a:hover{
+	color: cyan;
+}

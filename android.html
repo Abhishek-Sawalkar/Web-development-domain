@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="android.css">
+	<title>android</title>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	</head>
+	<!--for slide menu-->
+	<script>
+		function openSlideMenu(){
+			document.getElementById('menu').style.width = '250px';
+			document.getElementById('content').style.marginLeft = '250px';
+		}
+		function closeSlideMenu(){
+			document.getElementById('menu').style.width = '0';
+			document.getElementById('content').style.marginLeft = '0';
+		}
+
+	</script>
+<body>
+	
+<div style="position: absolute;">
+	<!--slide menu-->
+	<div class="overlap">
+		<div id ="content">
+			<span class="slide">
+				<a href="#" onclick="openSlideMenu()">
+					<i class="fas fa-bars" id="icon"></i>
+				</a>
+			</span>
+
+			<div id ="menu" class="navmenu">
+				<a href="#" class="close" onclick="closeSlideMenu()" >
+					<i class="fas fa-times"></i>
+				</a>
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Services</a>
+				<a href="#">Portfolio</a>
+				<a href="#">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<!--TOP MENU -->
+	<div class="topmenu"> 
+		<ul id="horizontal">
+			<li><a class="active" href="mypage.html">Home</a></li>
+			<li><a href="web_development.html">Web Development</a></li>
+			<li><a href="#">Android Development</a></li>
+			<li><a href="competitive_coding.html">Competitive Coding</a></li>
+		</ul>
+	</div>
+
+	<!--carousel-->
+	<div class="carousel">
+		<button class="carousel__button carousel__button--left">
+			<i class="fas fa-angle-left" id="ico"></i>
+		</button>
+			<div class="carousel__track-container">
+				
+					<ul class="carousel__track">
+						<li class="carousel__slide current-slide">					
+							<img class="carousel__image" src="androi_carousel5.jpg">
+						</li>
+						<li class="carousel__slide">
+							<img class="carousel__image" src="androi_carousel4.png">
+						</li>
+						<li class="carousel__slide">
+							<img class="carousel__image" src="androi_carousel3.jpg">
+						</li>
+					</ul>
+			</div>
+		<button class="carousel__button carousel__button--right">
+			<i class="fas fa-angle-right" id="ico"></i>
+		</button>	
+	</div>
+	<!--data part-->
+	<div class="data">
+		<h1>What is Competitive Programming</h1>
+		<p>Android software development is the process by which new applications are created for devices running the Android operating system. Google states that[3] "Android apps can be written using Kotlin, Java, and C++ languages" using the Android software development kit (SDK), while using other languages is also possible. All non-JVM languages, such as Go, JavaScript, C, C++ or assembly, need the help of JVM language code, that may be supplied by tools, likely with restricted API support. Some languages/programming tools allow cross-platform app support, i.e. for both Android and iOS. Third party tools, development environments and language support have also continued to evolve and expand since the initial SDK was released in 2008. In addition, with major business entities like Walmart, Amazon, Bank of America etc. eyeing to engage and sell through mobiles, mobile application development is witnessing a transformation.</p>
+
+		<h1>Overview</h1>
+		<p>In the last 10 years, Android has made a name for itself, not only with its candy-themed platform updates, but also with its widespread, and unexpected, success. In its lifetime, the open-source mobile operating system has grown to include 1.4 billion active users and 80% of smartphones today run Android software. Over 1 billion Android phones were sold in 2014 alone.
+
+		Mobile developers in the programming community are the minority – just over 9% of total developers in the world say they’re focusing on mobile devices, according to Stack Overflow’s 2015 developer survey. Of these mobile developers, however, Android developers make up the larger group, with 44.6% self-identifying as Android developers, compared to 33.4% who say they are building for iOS. Even so, many companies struggle to find enough developers to complete their Android projects. This trend is likely to continue as the overall number of smartphone users – and Android users, specifically – continues to grow.</p>
+	</div>
+	<!--card part-->
+	<section id="team">
+		<h1 style="text-align: center;">Links of different YouTube channels for Reference.</h1><br>
+		<div class="container my-3 py-5 text-center">
+			
+			<div class="row first">
+				<div class="col-lg-3 col-md-6">
+					<div class="card">
+						<div class="card-body">
+							<img src="android1.jpeg" class="img-fluid">
+							<h3>Android Developers</h3>
+							<h5>YouTuber</h5>
+							<p>This is the official channel from developer team behind Android.</p>
+							<div class="d-flex flex-row justify-content-center">
+								<div class="p-4">
+									<a href="#">
+										<i class="fab fa-youtube" style="font-size: 48px; color: red"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row second">
+				<div class="col-lg-3 col-md-6">
+					<div class="card">
+						<div class="card-body">
+							<img src="android2.jpg" class="img-fluid">
+							<h3>Derek Banas</h3>
+							<h5>YouTuber</h5>
+							<p>Derek Banas is an old-school programmer, offering tutorials of multiple programming languages.</p>
+							<div class="d-flex flex-row justify-content-center">
+								<div class="p-4">
+									<a href="#">
+										<i class="fab fa-youtube" style="font-size: 48px; color: red"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row third">
+				<div class="col-lg-3 col-md-6">
+					<div class="card">
+						<div class="card-body">
+							<img src="android3.jpg" class="img-fluid">
+							<h3>The New Boston</h3>
+							<h5>YouTuber</h5>
+							<p>Uploads videos on different tutorials videos including android development.</p>
+							<div class="d-flex flex-row justify-content-center">
+								<div class="p-4">
+									<a href="#">
+										<i class="fab fa-youtube" style="font-size: 48px; color: red"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<script src="style.js"></script>
+</body>
+</html>
+
